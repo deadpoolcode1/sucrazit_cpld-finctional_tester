@@ -11,6 +11,9 @@ namespace sucrazit // Note: actual namespace depends on the project name.
             var serPort = new Serial_c();
 
             serPort.serialPortFind(Const.port_detect_msg_send, Const.port_detect_msg_rcv);
+            var m_Command = new Commands();
+            m_Command.controller_set_gpio(GpioGroupConst.A, 1);
+            m_Command.controller_get_gpio(GpioGroupConst.A, 1);
         }
     }
 
