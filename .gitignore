@@ -1,2 +1,5 @@
 bin/
 sucrazit_pc_common/
+obj/
+DesignTimeBuild/
+v17/

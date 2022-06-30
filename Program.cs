@@ -14,6 +14,9 @@ namespace sucrazit // Note: actual namespace depends on the project name.
             var m_Command = new Commands();
             m_Command.controller_set_gpio(GpioGroupConst.A, 1);
             m_Command.controller_get_gpio(GpioGroupConst.A, 1);
+            var msgGpioIn = new Tuple<int, int>(GpioGroupConst.A, 1);
+            var msgGpioOut = new Tuple<int, int>(GpioGroupConst.B, 2);
+            m_Command.send_test(msgGpioIn, msgGpioOut);
         }
     }
 
