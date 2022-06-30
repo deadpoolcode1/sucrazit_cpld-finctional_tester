@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Nito.HashAlgorithms.CRC" Version="1.0.1" />
+    <PackageReference Include="NullFX.CRC" Version="1.1.4" />
+    <PackageReference Include="SimpleBase" Version="3.1.0" />
     <PackageReference Include="System.IO.Ports" Version="6.0.0" />
     <PackageReference Include="System.Management" Version="6.0.0" />
   </ItemGroup>
